@@ -59,9 +59,6 @@ li {
   padding-bottom: 25px;
 }
 
-.header__logo {
-}
-
 .header__info-contact {
   display: flex;
   justify-content: space-between;
@@ -78,16 +75,6 @@ li {
 .nav ul li {
   margin-right: 60px;
   font-weight: 500;
-}
-
-.header__info-mail {
-  /* font-family: "Oswald";
-  font-weight: 500;
-  text-transform: uppercase;
-  align-items: center;
-  padding-right: 100px;
-  font-size: 1.25rem;
-  color: #0e1636; */
 }
 
 .header__a-mail {
@@ -153,7 +140,7 @@ li {
 }
 /* End Header */
 
-/* Main  */
+/* Main more */
 .main__more-background {
   width: 100%;
   height: 745px;
@@ -178,7 +165,7 @@ li {
 .main__more-Text-p {
   font-weight: 400;
   font-size: 18px;
-  margin: 30px 0px;
+  margin: 36px 0px 40px 0px;
 }
 
 .main__more-button {
@@ -193,4 +180,63 @@ li {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.main__more-button:hover {
+  background: #2846b3;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+/* End Main-more */
+
+/* Main profile */
+
+.main__profile {
+  margin-top: 183px;
+}
+.main__profile__categories-p {
+  margin-bottom: 50px;
+}
+
+.main__profile__categories-p {
+  font-family: "Oswald", sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  width: 880px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__profile__categories span {
+  color: #1c379b;
+}
+
+.main__profile__categories-text {
+  text-align: center;
+}
+
+.main__img-window {
+  text-align: center;
+}
+.main__border {
+  padding: 15px;
+}
+
+.main__border:hover {
+  transition: all 0.45s;
+  /* outline: 1px solid; */
+  /* border: 1px solid; */
+  box-shadow: inset 0 0 0 2px #eee;
+}
+
+.main__profile__categories-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
