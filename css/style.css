@@ -189,7 +189,7 @@ li {
 }
 /* End Main-more */
 
-/* Main profile */
+/* Main Profile Categories */
 
 .main__profile {
   margin-top: 183px;
@@ -202,7 +202,7 @@ li {
   font-family: "Oswald", sans-serif;
   font-size: 46px;
   font-weight: 500;
-  width: 880px;
+  width: 980px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -240,3 +240,28 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
+/* End Main Profile Categories */
+
+/* Sponsor */
+
+.sponsor {
+  background-image: url(/img/main-manufacters.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 482px;
+  margin-top: 180px;
+  padding-top: 116px;
+  text-align: center;
+}
+
+.sponsor p {
+  color: #fff;
+}
+
+.sponsor_img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* End Sponsor */
