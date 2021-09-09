@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Витражпроект - алюминиевые конструкции любой сложности</title>
     <link rel="shortcut icon" href="/img/icons/home-5.svg" type="image/x-icon">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    </head>
 <body>
     <header class="header">
         <div class="header__contacts">
@@ -172,8 +173,108 @@
                     </div>
             </div>
         </div>
+        <div class="container">
+            <div class="carousel">
+               <div class="carousel__text">
+                    <p class="main__profile__categories-p">Алюминиевые конструкции <span>под ключ</span></p> 
+                </div>
+                <div class="carousel__text-p">
+                    <p>Алюминиевые конструкции под ключ</p> 
+                </div>
+                <div class="carousel__slider">
+                    <!--class="carousel"-->
+                    <div id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel_slider-flex">
+                            <div class="carousel-indicators">
+                               
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="false" aria-label="Slide 1">cтеклопакеты</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">фурнитура и механизмы</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">автоматика</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">замки</button>
+                            </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="carousel-inner__textblock">
+                                <p class="carousel__style-p">стеклопакеты</p>
+                                <p>Однокамерные и двухкамерные стеклопакеты. Обычные и мультифункциональные —
+                                    с энергосберегающими, звукопоглощающими
+                                    и ударопрочными свойствами. Большой ассортимент от лучших производителей страны. Подберем оптимальный вариант
+                                    под ваш объект!</p>
+                            </div>
+                            <img src="/img/slider.jpg" class="d-block" alt="...">
 
-        
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/slider.jpg" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/slider.jpg" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/slider.jpg" class="d-block" alt="...">
+                          </div>
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="container">
+                <p class="main__profile__categories-p">работаем на любых объектах</p>
+                <div class="wrapper__work">
+
+                    <div class="work__categories">
+                        <div class="work__categories-img">
+                            <img src="/img/icons/kvartita-2-1.svg" alt="">
+                        </div>
+                        <p>Квартиры, апартаменты</p>
+                    </div>
+                    
+                    <div class="work__categories">
+                        <div class="work__categories-img">
+                            <img src="/img/icons/ofice-2-2.svg" alt="">
+                        </div>
+                        <p>Офисы, учреждения</p>
+                    </div>
+                  
+                    <div class="work__categories">
+                        <div class="work__categories-img">
+                            <img src="/img/icons/magazine-2-3.svg" alt="">
+                        </div>
+                        <p>Магазины, рестораны</p>
+                    </div>
+                    <div class="work__categories">
+                        <div class="work__categories-img">
+                            <img src="/img/icons/coteg-2-4.svg" alt="">
+                        </div>
+                        <p>Частные дома, коттеджи</p>
+                    </div>
+                    <div class="work__categories">
+                        <div class="work__categories-img">
+                            <img src="/img/icons/TC-2-5.svg" alt="">
+                        </div>
+                        <p>деловые и Торговые центры</p>
+                    </div>
+                    <div class="work__categories">
+                        <div class="work__categories-img">
+                             <img src="/img/icons/building-2-6.svg" alt="">
+                        </div>
+                        <p>Производственные здания</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
     
@@ -181,6 +282,7 @@
 
 
     <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
      <script src="/script/script.js"></script>
 </body>
 </html>
