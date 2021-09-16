@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
   margin: 0;
+  -webkit-transition: 1s ease;
 }
 
 body {
@@ -264,9 +265,6 @@ span {
 /* End Sponsor */
 
 /* Carousel */
-.carousel {
-  margin-top: 187px;
-}
 
 .carousel-item {
   width: 1005px;
@@ -348,7 +346,6 @@ span {
 /* Work */
 
 .work {
-  /* height: 804px; */
   width: 100%;
   background-image: url(/img/work.jpg);
   background-position: center center;
@@ -390,7 +387,248 @@ span {
   text-transform: uppercase;
 }
 
-.main__profile__categories-p {
-  /* padding-top: 123px;
-  padding-bottom: 60px; */
+/* End work */
+
+/* Specialist */
+.specialist__p-top {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.specialist__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.specialist__block-img {
+  display: flex;
+  align-items: center;
+}
+
+.specialist__block-img img {
+  height: 315px;
+  width: 100%;
+  max-width: 315px;
+}
+
+.specialist__block-line {
+  border-top: 5px solid #eff2ff;
+  border-right: 5px solid #eff2ff;
+  width: 660px;
+  height: 86px;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.specialist__block-line-right {
+  border-top: 5px solid #eff2ff;
+  border-left: 5px solid #eff2ff;
+  width: 660px;
+  height: 86px;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+
+.specialist__block-text {
+  width: 305px;
+  margin-left: 30px;
+}
+
+.specialist__span {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.specialist__h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+specialist__p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* End specialist */
+
+/* Contact-us */
+
+.contact-us {
+  width: 100%;
+  height: 900px;
+  background-image: url(/img/bid.jpg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us__wrapper {
+  height: 900px;
+  width: 1920px;
+  display: flex;
+}
+
+.contact-us-left {
+  height: 100%;
+  width: 50%;
+}
+
+.contact-us-right {
+  height: 100%;
+  width: 50%;
+  background: #091d67c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-right__wrapper {
+  width: 545px;
+}
+
+.contact-us-right-h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ontact-us-right-p {
+  margin-top: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.contact-us__input-name {
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: #88151500;
+  width: 100%;
+  color: white;
+  padding-top: 40px;
+}
+
+.form-floating:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.contact-us__textarea {
+  width: 100%;
+  height: 188px;
+  border: 1px solid #fff;
+  margin-top: 45px;
+  background: #88151500;
+
+  color: #fff;
+}
+
+.contact-us__button {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+.contact-us__button {
+  height: 70px;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  font-family: "Montserrat";
+  color: #1c379b;
+  padding: 15px 32px;
+  margin-top: 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.contact-us__button:hover {
+  color: #fff;
+  background-color: #0e1636;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.form-check {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+  margin-right: 25px;
+}
+
+/* End Contact-us */
+
+/* Footer */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 386px;
+  background-color: #0b194e;
+}
+
+.footer__farba {
+  border-top: 1px solid silver;
+  height: 95px;
+}
+
+.footer__nav {
+  height: 291px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer__farba-logo {
+  text-align: center;
+  padding-top: 39px;
+}
+
+.footer__farba-a {
+  color: white;
+}
+
+.footer__farba-a img {
+  position: relative;
+  padding: 0px 15px;
+  bottom: 5px;
+}
+
+.footer__nav-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
