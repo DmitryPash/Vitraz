@@ -154,7 +154,9 @@ input[type="file"] {
   display: flex;
   align-items: center;
   background-image: url(/img/main.jpg);
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .main__more {
@@ -347,7 +349,9 @@ input[type="file"] {
 .work {
   width: 100%;
   background-image: url(/img/work.jpg);
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
