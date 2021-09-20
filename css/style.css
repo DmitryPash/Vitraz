@@ -55,6 +55,18 @@ input[type="file"] {
   width: 100%;
 }
 
+.navbar-brand {
+  margin-right: 8rem;
+}
+
+.navbar-nav li {
+  padding-right: 25px;
+}
+
+.d-flex {
+  justify-content: center;
+}
+
 .header__contacts {
   border-bottom: 0.3px solid rgb(233, 231, 231);
 }
@@ -314,7 +326,6 @@ input[type="file"] {
 .slick-dots button {
   border: none;
   background-color: white;
-  border-bottom: 2px solid #c5ccec;
   color: #c5ccec;
 }
 
