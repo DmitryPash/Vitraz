@@ -61,6 +61,7 @@ input[type="file"] {
 
 .navbar-nav li {
   padding-right: 25px;
+  white-space: nowrap;
 }
 
 .d-flex {
@@ -170,6 +171,7 @@ input[type="file"] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 183px;
 }
 .main__more {
   width: 800px;
@@ -211,9 +213,8 @@ input[type="file"] {
 /* End Main-more */
 
 /* Main Profile Categories */
-
-.main__profile__categories-p {
-  margin-bottom: 50px;
+.main__profile__categories {
+  margin-bottom: 189px;
 }
 
 .main__profile__categories-p {
@@ -223,7 +224,8 @@ input[type="file"] {
   width: 980px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 130px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .main__profile__categories-text {
@@ -263,8 +265,10 @@ input[type="file"] {
   background-position: center center;
   background-size: cover;
   height: 482px;
-  margin-top: 180px;
   text-align: center;
+  margin-bottom: 180px;
+  display: flex;
+  align-items: center;
 }
 
 .sponsor p {
@@ -359,12 +363,17 @@ input[type="file"] {
 
 .work {
   width: 100%;
+  height: 804px;
   background-image: url(/img/work.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  margin-bottom: 188px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work p {
@@ -537,6 +546,10 @@ input[type="text"] {
   padding-top: 40px;
 }
 
+.contact-us__input-name::placeholder {
+  color: white;
+}
+
 .form-floating:active,
 :hover,
 :focus {
@@ -549,7 +562,7 @@ input[type="text"] {
   width: 100%;
   height: 188px;
   border: 1px solid #fff;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   padding-bottom: 45px;
   background: #88151500;
 
@@ -570,7 +583,7 @@ input[type="text"] {
   font-family: "Montserrat";
   color: #1c379b;
   padding: 15px 32px;
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -600,15 +613,22 @@ input[type="text"] {
 
 /* Footer */
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+html,
 body {
-  margin-bottom: 60px;
+  height: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
 .footer {
-  position: absolute;
+  flex-shrink: 0;
   width: 100%;
   height: 386px;
   background-color: #0b194e;
@@ -635,6 +655,16 @@ body {
 .footer__farba-a {
   color: white;
 }
+.footer__farba-a:hover {
+  color: white;
+}
+
+.footer__a {
+  color: white;
+}
+.footer__a:hover {
+  color: white;
+}
 
 .footer__farba-a img {
   position: relative;
@@ -655,16 +685,25 @@ body {
   align-items: flex-end;
   font-weight: 400;
   font-size: 14px;
+  margin-left: 90px;
+}
+
+.footer__nav-categories ul li {
+  width: 32%;
+  padding-bottom: 18px;
+  text-align: start;
 }
 
 .footer__nav-about {
   height: 100%;
+  width: 33%;
   width: 400px;
 }
 
 .footer__nav-vitraz {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
+  width: 33%;
 }
 .footer__nav-vitraz-logo {
   padding-bottom: 20px;
@@ -756,3 +795,11 @@ body {
   padding-left: 10px;
 }
 /* end textarea */
+
+/* @MEDIA */
+
+@media only screen and (max-width: 1250px) {
+  .header__info-callback {
+    display: none;
+  }
+}
