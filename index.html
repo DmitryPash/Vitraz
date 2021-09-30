@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     </head>
 <body>
     <div class="content">
-    <!-- 12312312312312 -->
+    <!-- Header -->
     <header class="header">
     <div class="header__contacts">
     <div class="container">
@@ -74,7 +74,7 @@
         </div>
     </div>
     </header>
-    <!-- 12312312312312 -->
+    <!-- End Header -->
     <!-- <header class="header">
         <div class="header__contacts">
         <div class="container"> 
@@ -242,31 +242,43 @@
     <div class="container">
         <div class="carousel">
            <div class="carousel__text">
-                <p class="main__profile__categories-p">Алюминиевые конструкции <span>под ключ</span></p> 
+                <p class="carousel__text-h1">Алюминиевые конструкции <span>под ключ</span></p> 
             </div>
             <div class="carousel__text-p">
-                <p>Алюминиевые конструкции под ключ</p> 
+                <p>Материалы и дополнительные опции</p> 
             </div>
-           
- 
-                  <!-- NEW CAROUSEL -->
-                  <div class="slider">
-                    <div class="slider__item">
-                      <img src="/img/carousel-1.png" alt="">
-                      <div class="slider__item-text">
 
+                  <!-- NEW CAROUSEL -->
+                  <div class="row">
+                      <div class="col-4 slider-row">
+                          <div class="slider-nav">
+                          </div>
                       </div>
-                    </div>
-                    <div class="slider__item">
-                      <img src="/img/carousel-2.png" alt="">
+                      <div class="col-8 slider-media">
+                        <div class="arrow">
+                        <span class="prev-arrow"><i class="fas fa-angle-left"></i></span>
+                        <span class="prev-arrow"><i class="fas fa-angle-right"></i></span>
+                        </div>
+                        <div class="slider">
+                            <div class="slider__item" data-name="Стеклопакеты">
+                                <!-- <div class="slider__item-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse adipisci dolores vitae voluptatum minima dolore iure, aut eius beatae ab.</p>
+                                </div> -->
+                              <img src="/img/Rectangle.jpg" alt="">
+                            </div>
+                            <div class="slider__item" data-name="Фурнитура и механизмы">
+                              <img src="/img/carousel-2.png" alt="">
+                          </div>
+                          <div class="slider__item" data-name="Автоматика">
+                            <img src="/img/carousel-1.png" alt="">
+                        </div>
+                        <div class="slider__item" data-name="Замки">
+                            <img src="/img/carousel-2.png" alt="">
+                        </div>
+                        </div>
+                      </div>
                   </div>
-                  <div class="slider__item">
-                    <img src="/img/carousel-1.png" alt="">
-                </div>
-                <div class="slider__item">
-                    <img src="/img/carousel-2.png" alt="">
-                </div>
-                </div>
+                 
                   <!-- END NEW -->
            
         </div>
@@ -341,7 +353,7 @@
             </div>
             <div class="specialist__block">
                 <div class="specialist__block-line-right"></div>
-                <div class="specialist__block-img">
+                <div class="specialist__block-img flex-reverse-media">
                     <img src="/img/icons/specialist 2.jpg" alt="alt">
                     <div class="specialist__block-text">
                     <span class="specialist__span">02</span>
@@ -365,7 +377,7 @@
             </div>
             <div class="specialist__block">
                 <div class="specialist__block-line-right"></div>
-                <div class="specialist__block-img">
+                <div class="specialist__block-img flex-reverse-media">
                     <img src="/img/icons/specialist 4.jpg" alt="alt">
                     <div class="specialist__block-text">
                     <span class="specialist__span">04</span>
@@ -434,39 +446,28 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__nav">
-                <div class="footer__nav-vitraz">
+                <div class="col-4 footer__nav-vitraz">
                     <a href="#"><img src="/img/icons/footer-logo.svg" alt="alt" class="footer__nav-vitraz-logo"></a>
                     <a href="#" class="footer__a"><p><img src="/img/icons/phone 1.svg" alt="alt">+375 (29) 624-86-02</p></a>
                     <a href="#" class="footer__a"><p><img src="/img/icons/Frame 2.svg" alt="alt">vtproekt@mail.ru</p></a>
                     <a href="#" class="footer__a"><p><img src="/img/icons/Gps.svg" alt="alt">г. Минск, Свислочская, 11</p></a>
                 </div>
-                <div class="footer__nav-about">
+                <div class="col-4 footer__nav-about">
                    <div class="footer__nav-about-p">
                     <a href="#" class="footer__a"><p>О нас</p></a>
                     <a href="#" class="footer__a"><p>Фотогалерея</p></a>
                     <a href="#" class="footer__a"><p>Контакты</p></a>
                    </div>
                    <div class="footer__nav-about-text">
-                    <p>Работаем с алюминиевым профилем
-                        от лучших производителей России и Беларуси</p>
-                   </div>
+                    <p> Работаем с алюминиевым профилем от лучших производителей России и Беларуси</p>
+                    </div>
                    
                     <div class="footer__nav-about-icon">
                         <a href="#" class="footer__a"><img src="/img/icons/Group 912.png" alt="alt"></a>
                     </div>
                 </div> 
-                <div class="footer__nav-categories">
-                    <!-- <div class="footer__nav-categories-grid">
-                        <div class="footer__nav-categories-grid-pd"><p>Окна</p></div>
-                        <div><p>Раздвижные двери</p></div>
-                        <div><p>Окна ПВХ</p></div>
-                        <div class="footer__nav-categories-grid-pd" ><p>Двери</p></div>
-                        <div><p>Балконы</p></div>
-                        <div><p>Перегородки</p></div>
-                        <div  class="footer__nav-categories-grid-pd"><p>Фасады</p></div>
-                        <div><p>Зимние сады</p></div>
-                        <div><p>Зенитные фонари</p></div> 
-                    </div> -->
+                
+                <div class="col-4 footer__nav-categories">
                     <ul>
                         <a href="#" class="footer__a"> <li>Окна</li></a>
                         <a href="#" class="footer__a"> <li>Раздвежные двери</li></a>
@@ -474,7 +475,7 @@
                         <a href="#" class="footer__a"> <li>Двери</li></a>
                         <a href="#" class="footer__a"> <li>Балконы</li></a>
                         <a href="#" class="footer__a"> <li>Перегородки</li></a>
-                        <a href="#" class="footer__a">  <li>Фасады</li></a>
+                        <a href="#" class="footer__a"> <li>Фасады</li></a>
                         <a href="#" class="footer__a"> <li>Зимние сады</li></a>
                         <a href="#" class="footer__a"> <li>Зенитные фонари</li></a>
                     </ul>
@@ -482,6 +483,27 @@
                         <p>ВитражПроект © 2020</p>
                     </div>
             </div>
+       
+            <!-- Meida Screen -->
+            <div class="media-footer">
+            <div class="col-4 footer__nav-categories-media">
+                <ul>
+                    <a href="#" class="footer__a"> <li>Окна</li></a>
+                    <a href="#" class="footer__a"> <li>Раздвежные двери</li></a>
+                    <a href="#" class="footer__a"> <li>Окна ПВХ</li></a>
+                    <a href="#" class="footer__a"> <li>Двери</li></a>
+                    <a href="#" class="footer__a"> <li>Балконы</li></a>
+                    <a href="#" class="footer__a"> <li>Перегородки</li></a>
+                    <a href="#" class="footer__a"> <li>Фасады</li></a>
+                    <a href="#" class="footer__a"> <li>Зимние сады</li></a>
+                    <a href="#" class="footer__a"> <li>Зенитные фонари</li></a>
+                </ul>
+                <div class="footer__nav-categories-coopyright">
+                    <p>ВитражПроект © 2020</p>
+                </div>
+        </div>
+    </div>
+            <!-- End Media Screen -->
             </div>
         </div>
         <div class="footer__farba">

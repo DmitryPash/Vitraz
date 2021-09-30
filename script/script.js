@@ -1,12 +1,40 @@
+
+
+
 $(document).ready(function(){
-    $('.slider').slick({
-        dots: true,
+    $('.slider__item').each(function(key, item){
+        console.log($(item).attr('data-name'))
+        const name = $(item).attr('data-name') || null;
+        if (name != null){
+            $('.slider-nav').append(`
+            <a data-index="${key}" href="#" class="slider-nav-link">
+                ${name}
+            </a>`)
+        }
+    })
+
+   const slider = $('.slider').slick({
+        // dots: true,
         infinite: true,
         speed: 500,
         fade: true,
         cssEase: 'linear',
+        prevArrow:'.prev-arrow',
+        nextArrow:'.prev-arrow',
    });
+
+   $(document).on('click', '.slider-nav-link', function(e){
+        console.log('asdasd')
+
+       e.preventDefault()
+       const index = +$(this).attr('data-index')
+       slider.slick('slickGoTo', index)
+   })
+
+
   });
+
+
 
   function textArea() {
     document.getElementById('textarea').style.display = 'initial';
@@ -15,10 +43,8 @@ $(document).ready(function(){
     document.getElementById('contact-us__buttons').style.display = 'block';
 }
 
-(function changeTextElements(){
-    document.getElementById('slick-slide-control00').innerText = 'СТЕКЛОПАКЕТЫ'
-    document.getElementById('slick-slide-control01').innerText = 'ФУРНИТУРА И МЕХАНИЗМЫ'
-    document.getElementById('slick-slide-control02').innerText = 'АВТОМАТИКА'
-    document.getElementById('slick-slide-control03').innerText = 'ЗАМКИ'
-}());
+
+
+
+
 

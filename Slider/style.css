@@ -3,3 +3,18 @@
   max-width: 1350px;
   margin: 0 auto;
 }
+
+.slider .slider_items img {
+}
+
+.prev-arrow {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1c379b;
+  height: 58px;
+  width: 59px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
