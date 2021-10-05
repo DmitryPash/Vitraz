@@ -16,21 +16,6 @@ function zxc() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   let numberArr = []
 
   function rndNumber(min,max) {
