@@ -1,0 +1,97 @@
+.container {
+  height: 100%;
+}
+
+#photo-header {
+  color: #1c379b;
+  font-weight: 600;
+}
+
+/* Photo gallery */
+.photoGallery-background {
+  background-image: url(../img/main-manufacters.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 257px;
+}
+
+.photoGallery {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.photoGallery-h1 {
+  font-family: "Oswald", "sans-serif";
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 115%;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.photoGallery-nav-main {
+  color: white;
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.photoGallery-nav-photo {
+  color: white;
+  font-weight: 600;
+}
+
+.photoGallery-nav i {
+  color: #fff;
+  opacity: 0.3;
+  padding: 0px 7.5px;
+}
+
+/*End Photo gallery */
+
+/* Windows and doors */
+.text-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Oswald", "sans-serif";
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.WindowsDoors .col-4 {
+  height: 250px;
+}
+
+.col-4 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.WindowsDoors-image {
+  height: 100%;
+  width: 100%;
+  background: url(../img/gallery/Doors-Wind-2.png);
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.info-hover {
+  background-color: rgb(80, 55, 121);
+  width: 100%;
+  height: 62px;
+  opacity: 0;
+}
+
+.WindowsDoors-image:hover .info-hover {
+  opacity: 1;
+}
+
+/* End Windows and doors */
